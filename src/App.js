@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import {BrowserRouter as Router} from 'react-router-dom'
-import "./App.css";
+import Headers from "./components/Header";
+import AppRoutes from "./AppRoutes";
+// import "./App.css";
 // import {Data} from "./Data";
 function App() {
   const [personData, setData] = useState([]);
@@ -20,7 +22,8 @@ function App() {
   // ! dynamically importing data 
   // ? using aync await function    
   //  const Data = (await import(/* webpackChunkName: "Data" */ './Data')).default
-  //    setData(Data);}
+  //    setData(Data);}import AppRoutes from './AppRoutes';
+
 
 
 
@@ -32,7 +35,10 @@ function App() {
         <pre>
           {personData.length > 0 ? JSON.stringify(personData, null, 2) : ""}
         </pre> */}
-
+      <Router>
+        <Headers />
+        <AppRoutes />
+      </Router>
       </div>
     </div>
   );

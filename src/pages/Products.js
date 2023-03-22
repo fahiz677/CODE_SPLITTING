@@ -3,7 +3,7 @@ import React from 'react'
 
 const Products = () => {
   return (
-    <div className='box'>
+    <div >
     <h2>I am Products component</h2>
 </div>
   )

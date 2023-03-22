@@ -2,9 +2,9 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='box'>
+    <div >
     <h2>I am Services component</h2>
-</div>
+    </div>
   )
 }
 

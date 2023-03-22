@@ -3,26 +3,20 @@ import { NavLink}  from 'react-router-dom';
 import "../App.css" ;
 
 const Header = () => {
-    let activeStyle = {
-        color: '#111',
-        border:'1px solid #111',
-        borderRadius:'2px',
-        padding:'10px',
-    };
   return (
     <div>
-        <ul>
-            <li>
-                <NavLink  to="/" style={({isActive})=> (isActive ? activeStyle : undefined)}>Home</NavLink>
+        <ul className='list'>
+            <li className='items'>
+                <NavLink style={{ textDecoration: 'none' , color : "#fff"}} to="/" >Home</NavLink>
             </li>
-            <li>
-                <NavLink  to="/product" style={({isActive})=> (isActive ? activeStyle : undefined)}>Products</NavLink>
+            <li className='items'>
+                <NavLink style={{ textDecoration: 'none' , color : "#fff"}} to="/product" >Products</NavLink>
             </li>
-            <li>
-                <NavLink  to="/service" style={({isActive})=> (isActive ? activeStyle : undefined)}>Services</NavLink>
+            <li className='items'> 
+                <NavLink  style={{ textDecoration: 'none' , color : "#fff"}}to="/service" >Services</NavLink>
             </li>
-            <li>
-                <NavLink  to="/contact" style={({isActive})=> (isActive ? activeStyle : undefined)}>Contact</NavLink>
+            <li className='items'>
+                <NavLink  style={{ textDecoration: 'none' , color : "#fff"}}to="/contact" >Contact</NavLink>
             </li>
         </ul>
     </div>
